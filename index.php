@@ -23,7 +23,7 @@
         <h5 class="lote2 font-weight-bold">El proyecto consta de 83 lotes y 2,500 m² de área</h5>
     </div>
 
-<div><img src="<?php echo get_stylesheet_directory_uri()?>/assets/planos.svg" class="responsive"></div>
+<div><img src="<?php echo get_stylesheet_directory_uri()?>/assets/Plano-02.svg" class="responsive"><text font-family="Open Sans', sans-serif;"></div>
     </div>
 
     <!-- GALERIA -->  
@@ -71,44 +71,46 @@
 
  <!-- UBICACION -->  
  <div class="form-row2">
-
-
-
-
-
-  <h1>UBICACIÓN</h1>
-<div >
-<img class="location" src="<?php echo get_stylesheet_directory_uri()?>/assets/mapa.png" alt="..." style="margin-top: 5%; margin-bottom:5%";>
-</div>
- </div>
-
-
-
- <div class="jumbotron2" style="width: 100%;"> 
- <div class="container themed-container">
-  
-   <div class="location" id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
-     <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
-      var setting = {"height":800,"width":1800, "margin-bottom":100, "zoom":14,"queryString":"Refinería Cadereyta, Carr. Libre Monterrey - Reynosa, Sin Nombre de Colonia 3, Cadereyta Jiménez, N.L., México","place_id":"ChIJaec3at7YYoYRrULL6idn5Fs","satellite":false,"centerCoord":[],"cid":"0x5be46727eacb42ad","lang":"es","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"202866"};
-      var d = document;
-      var s = d.createElement('script');
-      s.src = 'https://embedgooglemap.1map.com/js/script-for-user.js?embed_id=202866';
-      s.async = true;
-      s.onload = function (e) {
-        window.OneMap.initMap(setting)
-      };
-      var to = d.getElementsByTagName('script')[0];
-      to.parentNode.insertBefore(s, to);
-    })();</script><a href="https://embedgooglemap.1map.com/es"></a></div>
-</div>
+    <h1>UBICACIÓN</h1>
 </div>
 
+<div class="container">
 
+<div class="row-2">
+    <div class="col">
+        <img class="location" src="<?php echo get_stylesheet_directory_uri()?>/assets/mapa.png" alt="...">
+    </div>
+
+
+    <div class="col">
+              <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+              var setting = {"height":557,"width":803,"zoom":14,"queryString":"San Ignacio de Abajo, Coahuila de Zaragoza, México","place_id":"ChIJs6t0gDgAiIYRgTjYk0NwGJk","satellite":false,"centerCoord":[25.301201441395875,-100.6630450264062],"cid":"0x9918704393d83881","lang":"es","cityUrl":"/mexico/ramos-arizpe-36619","cityAnchorText":"Mapa de Ramos Arizpe, Coahuila, México","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"228300"};
+              var d = document;
+              var s = d.createElement('script');
+              s.src = 'https://1map.com/js/script-for-user.js?embed_id=228300';
+              s.async = true;
+              s.onload = function (e) {
+                window.OneMap.initMap(setting)
+              };
+              var to = d.getElementsByTagName('script')[0];
+              to.parentNode.insertBefore(s, to);
+            })();</script><a href="https://1map.com/es/map-embed"></a>
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+ 
  <!-- CONTACTO -->  
 
   <form method="post" id="contact-form" method="post" action="contact-form-handler.php">
 
- <div class="form-row1"  >
+ <div class="form-row1">
   <h1>CONTACTO</h1>
  </div>
 
@@ -153,11 +155,4 @@
 
 
   </form>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
-    <script src="/docs/4.4/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
-      crossorigin="anonymous"></script>
       <?php get_footer(); ?>

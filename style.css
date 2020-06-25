@@ -6,6 +6,29 @@ Description: Theme for 5 elementos webpage.
 Version: 1.0
 */
 
+/*STYLES/FONTS*/
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+ -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+ }
+
+
+@media (min-width: 768px) {
+.bd-placeholder-img-lg {
+font-size: 3.5rem;
+ }
+}
 
 .container {
   width: 100%;
@@ -219,7 +242,6 @@ Version: 1.0
 
 
   .row {
-    max-width: 75rem;
     margin-right: auto;
     margin-left: auto;
 }
@@ -253,6 +275,11 @@ Version: 1.0
 
 
 /* BUTTON */
+
+
+
+
+
 .button.large {
   font-size: 1.25rem;
   margin-top:10%;
@@ -471,10 +498,15 @@ h5, h6 {
 
 
 
+.w3-col, .w3-half, .w3-third, .w3-twothird, .w3-threequarter, .w3-quarter {
+  float: left;
 
 
+}
 
-
+.w3-col.s6 {
+  width: 49.99999%;
+}
 
 
 
@@ -484,14 +516,134 @@ h5, h6 {
 
 /*UBICACIÓN*/
 
+body {
+  width: 90%;
+  max-width: 900px;
+  margin: 2em auto;
+  font: .9em/1.2 Arial, Helvetica, sans-serif;
+}
+                
+.container-4 > div {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(207,232,220);
+  border: 2px solid rgb(79,185,227);
+}.container-4 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100px;
+  grid-gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contain-xl {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.home-industries-container {
+
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+.location-1{
+  width: 50%;
+    padding: 0 1rem;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.location-2{
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 73.125em){
+
+  .row{
+      max-width: 1140px;
+}
+}
+
+
+.row-2{
+  height: 50%;
+}
+
+
+
+
+
+
+.row{
+  height: 50%;
+}
+
+
+
+.col-5{
+  height: 50%;
+
+
+
+}
+
+
+
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .location{
 
   width: auto;
-  height: 800px;
-  background-position: center;
-  background-size: cover;
-  padding-bottom: 250px; 
-  margin-bottom: 30%; 
+  height: 550px;
+
+
 }
 
 .frame{
@@ -660,6 +812,7 @@ margin-top: 100px;
 
 .col-6{
   color: white;
+
 }
 
 .text1{

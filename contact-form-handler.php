@@ -28,7 +28,7 @@
         mail($to_email,$email_subject,$email_body,$headers);
 
 
-    $headers("Location: index.php");
+    headers("Location: index.php");
 
 
 ?>  
